@@ -1,0 +1,17 @@
+React Next app router项目
+
+1. 路由
+    app目录
+        /layout：总入口
+        /page.tsx：默认页面
+        
+        /about/page.tsx：about页面
+        /about/[id].tsx：about动态页面
+
+        pages/blog/[slug].js → /blog/:slug (/blog/hello-world)
+        pages/[username]/settings.js → /:username/settings (/foo/settings)
+        pages/post/[...all].js → /post/* (/post/2020/id/title)
+
+        模板
+        /app/(commonLayout)/layout：这个模块下的通用 页面模板
+
