@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation"
 
 const About = () => {
 	const router = useRouter() // 用来导航的
-	console.log("router", router)
+	// console.log("router", router)
 	const about_detail = [
 		{
 			id: 1
@@ -20,8 +20,7 @@ const About = () => {
 	]
 	return (
 		<div>
-			<h1>About页面</h1>
-
+			<h2>About页面</h2>
 			<ul>
 				{about_detail.map(v => {
 					return (
