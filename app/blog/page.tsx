@@ -1,32 +1,15 @@
-"use client";
 import React from "react";
-import { blog_data } from "@/mock/blog";
-import { List, Avatar } from "antd";
-import Link from "next/link";
+import BlogList from "@/app/components/blog/list";
+import type { Metadata } from "next";
+
+// 网页信息
+export const metadata: Metadata = {
+    title: "博客列表",
+    description: "博客列表描述",
+};
 
 const Page = () => {
-    const list = blog_data.blogList.list;
-    return (
-        <List
-            itemLayout="horizontal"
-            dataSource={list}
-            renderItem={(item, index) => (
-                <List.Item>
-                    <List.Item.Meta
-                        avatar={
-                            <Avatar
-                                src={`https://api.dicebear.com/7.x/miniavs/svg?seed=${index}`}
-                            />
-                        }
-                        title={
-                            <Link href={`/blog/${item.id}`}>{item.title}</Link>
-                        }
-                        description={item.summary}
-                    />
-                </List.Item>
-            )}
-        />
-    );
+    return <BlogList />;
 };
 
 export default Page;
