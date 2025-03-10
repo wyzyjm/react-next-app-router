@@ -1,6 +1,7 @@
 import "./styles/globals.css"
 import Nav, { NavProps } from "@/app/components/nav"
 import type { Metadata } from "next"
+import { AntdRegistry } from "@ant-design/nextjs-registry"
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -35,7 +36,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className='mx-auto flex flex-col h-screen'>
 				<Nav navData={navData} />
-				{children}
+				<AntdRegistry>{children}</AntdRegistry>
 			</body>
 		</html>
 	)
