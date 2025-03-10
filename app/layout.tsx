@@ -25,6 +25,10 @@ export default function RootLayout({
 		{
 			path: "/app",
 			name: "App"
+		},
+		{
+			path: "/blog",
+			name: "Blog"
 		}
 	]
 	return (
