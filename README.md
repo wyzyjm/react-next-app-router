@@ -28,10 +28,12 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
    3. `app/default.tsx return null`
    4. `app/layout.tsx中添加 xxx`
    5. `@xxx/(.)aaa`, 添加需要拦截的路由
-
+2. api接口：route.ts
+   1. lowdb插件
 
 ## 功能
 1. 动态路由：切换页面元信息
 2. 平行路由：需要在其它 @item文件夹下建立 `default.tsx` 文件
    1. 作用：同一layout中展示多个 页面，例如仪表盘页面
-3. 拦截路由：
+3. 拦截路由：（案例：图片弹窗分享）
+4. 后端路由：（案例：api接口）
